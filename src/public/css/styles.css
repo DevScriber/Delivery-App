@@ -7,7 +7,9 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./variables.css');
 @import url('./container.css');
 
 /* Sections style */
 @import url('./dashboard.css');
+@import url('./add-client.css');
