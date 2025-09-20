@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #2d89ef;
+  /* для кнопок, CTA, выделения важных элементов */
+  --color-accent: #f5a623;
+  --color-background: #f9fafb;
+  --color-text: #2c3e50;
+  /*  для разделения блоков, карточек, форм */
+  --color-border: #dde2e6;
+  --color-primary-hover: #0c73e8;
+  --color-accent-hover: #ef9300;
+
+  --color-success: #27ae60;
+  --color-error: #e74c3c;
+}
