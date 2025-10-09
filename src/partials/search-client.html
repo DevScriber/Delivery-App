@@ -1,0 +1,83 @@
+<div class="backdrop search-client-modal is-hidden">
+  <div class="search-client">
+    <div class="container">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/img/sprite.svg#exit"></use>
+        </svg>
+      </button>
+
+      <form class="dashboard-modal__form" action="" method="get">
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="client-id"
+              >ID</label
+            >
+            <input
+              class="input__control"
+              type="number"
+              id="id"
+              name="id"
+              placeholder="ID"
+              required
+            />
+          </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="client-name"
+              >Имя</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="client-surname"
+              >Фамилия</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Фамилия"
+              required
+            />
+          </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="client-phone"
+              >Телефон</label
+            >
+            <input
+              class="input__control"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Телефон"
+              required
+            />
+          </div>
+        </div>
+        <button class="dashboard-modal__form-btn" type="submit">Найти</button>
+      </form>
+      <div class="search-client-result is-hidden">
+        <div class="data-content"></div>
+        <div class="search-client-result__action-block">
+          <button class="action-btn change-info">Изменить</button>
+          <button class="action-btn map">Карта</button>
+          <button class="action-btn cancel">Удалить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
