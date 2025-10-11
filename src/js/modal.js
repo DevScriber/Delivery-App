@@ -1,3 +1,5 @@
+// Управление открытием/закрытием модалок
+
 const toggleModal = selector => {
   const modal = document.querySelector(selector);
   if (modal) {

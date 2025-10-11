@@ -1,0 +1,15 @@
+.search-client-result {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.action-btn {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+}
