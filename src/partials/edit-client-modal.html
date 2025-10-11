@@ -1,0 +1,101 @@
+<div class="backdrop edit-client-modal is-hidden">
+  <div class="edit-client">
+    <div class="container">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/img/sprite.svg#exit"></use>
+        </svg>
+      </button>
+
+      <form
+        class="dashboard-modal__form edit-client-form"
+        action="#"
+        method="post"
+      >
+        <input type="hidden" id="edit-id" name="id" />
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-name"
+              >Имя</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-name"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-surname"
+              >Фамилия</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-surname"
+              name="surname"
+              placeholder="Фамилия"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-phone"
+              >Телефон</label
+            >
+            <input
+              class="input__control"
+              type="tel"
+              id="edit-phone"
+              name="phone"
+              placeholder="Телефон"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-location"
+              >Город/Село</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-location"
+              name="location"
+              placeholder="Город/Село"
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-address"
+              >Адрес</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-address"
+              name="address"
+              placeholder="Адрес"
+            />
+          </div>
+        </div>
+
+        <button class="dashboard-modal__form-btn" type="submit">
+          Сохранить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
