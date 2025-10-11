@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/Delivery-App/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-BVo4gNdB.css">
+    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-C94v7cBk.css">
   </head>
   <body>
     <main>
@@ -165,7 +165,7 @@
         </svg>
       </button>
 
-      <form class="dashboard-modal__form" action="" method="get">
+      <form class="dashboard-modal__form" action="#" method="get">
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="client-id"
@@ -177,7 +177,6 @@
               id="id"
               name="id"
               placeholder="ID"
-              required
             />
           </div>
         </div>
@@ -192,7 +191,6 @@
               id="name"
               name="name"
               placeholder="Имя"
-              required
             />
           </div>
         </div>
@@ -207,7 +205,6 @@
               id="surname"
               name="surname"
               placeholder="Фамилия"
-              required
             />
           </div>
         </div>
@@ -222,7 +219,6 @@
               id="phone"
               name="phone"
               placeholder="Телефон"
-              required
             />
           </div>
         </div>
@@ -236,6 +232,108 @@
           <button class="action-btn cancel">Удалить</button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+      <div class="backdrop edit-client-modal is-hidden">
+  <div class="edit-client">
+    <div class="container">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/Delivery-App/assets/sprite-CCP9Vw_L.svg#exit"></use>
+        </svg>
+      </button>
+
+      <form
+        class="dashboard-modal__form edit-client-form"
+        action="#"
+        method="post"
+      >
+        <input type="hidden" id="edit-id" name="id" />
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-name"
+              >Имя</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-name"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-surname"
+              >Фамилия</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-surname"
+              name="surname"
+              placeholder="Фамилия"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-phone"
+              >Телефон</label
+            >
+            <input
+              class="input__control"
+              type="tel"
+              id="edit-phone"
+              name="phone"
+              placeholder="Телефон"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-location"
+              >Город/Село</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-location"
+              name="location"
+              placeholder="Город/Село"
+            />
+          </div>
+        </div>
+
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-address"
+              >Адрес</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="edit-address"
+              name="address"
+              placeholder="Адрес"
+            />
+          </div>
+        </div>
+
+        <button class="dashboard-modal__form-btn" type="submit">
+          Сохранить
+        </button>
+      </form>
     </div>
   </div>
 </div>
