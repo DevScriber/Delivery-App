@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/Delivery-App/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-BZ9qvsTi.css">
+    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-B4Lyg9OP.css">
   </head>
   <body>
     <main>
@@ -22,10 +22,24 @@
   <div class="container">
       <h2 class="dashboard-title">Панель управления</h2>
       <nav class="nav-buttons">
-        <button class="dashboard-button dashboard-add-client">Добавить клиента</button>
-        <button class="dashboard-button dashboard-search-client">Найти клиента</button>
-        <button class="dashboard-button dashboard-clients-list">Список клиентов</button>
-        <button class="dashboard-button dasboard-map">Карта</button>
+        <ul class="dashboard-list">
+          <li class="dashboard-list-item">
+            <button class="dashboard-button dashboard-add-client">Добавить клиента
+            </button>
+          </li>
+          <li class="dashboard-list-item">
+            <button class="dashboard-button dashboard-search-client">Найти клиента
+            </button>
+          </li>
+          <li class="dashboard-list-item">
+            <button class="dashboard-button dashboard-clients-list">Список клиентов
+            </button>
+          </li>
+          <li class="dashboard-list-item">
+            <button class="dashboard-button dasboard-map">Карта
+            </button>
+          </li>
+        </ul>
       </nav>
   </p>
 </div>
@@ -100,6 +114,19 @@
               required
             />
           </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+             <label class="input__label visually-hidden" for="region">Область</label>
+             <input
+              class="input__control"
+              type="text"
+              id="region"
+              name="region"
+              value="Винницкая область"
+             placeholder="Область"
+            />
+        </div>
         </div>
         <div class="dashboard-modal__form-field">
           <div class="input">
@@ -327,6 +354,20 @@
             value="Украина"
             placeholder="Страна"
             required
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="region"
+            >Область</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="edit-region"
+            name="region"
+            placeholder="Область"
           />
         </div>
       </div>
