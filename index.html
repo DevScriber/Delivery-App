@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/Delivery-App/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-C94v7cBk.css">
+    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-svkctRIk.css">
   </head>
   <body>
     <main>
@@ -31,13 +31,13 @@
 
       <div class="backdrop add-client-modal is-hidden">
   <div class="add-client">
-    <div class="container">
-      <button class="btn-exit" type="button">
-        <svg class="icon-exit" width="32" height="32">
-          <use href="/Delivery-App/assets/sprite-CCP9Vw_L.svg#exit"></use>
-        </svg>
-      </button>
+    <button class="btn-exit" type="button">
+      <svg class="icon-exit" width="32" height="32">
+        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+      </svg>
+    </button>
 
+    <div class="container">
       <form class="dashboard-modal__form add-client__form">
         <div class="dashboard-modal__form-field">
           <div class="input">
@@ -103,14 +103,14 @@
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="city"
-              >Город / населённый пункт
+              >Город/село
             </label>
             <input
               class="input__control"
               type="text"
               id="city"
               name="city"
-              placeholder="Город / населённый пункт"
+              placeholder="Город/село"
               required
             />
           </div>
@@ -154,13 +154,12 @@
 
       <div class="backdrop search-client-modal is-hidden">
   <div class="search-client">
+    <button class="btn-exit" type="button">
+      <svg class="icon-exit" width="32" height="32">
+        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+      </svg>
+    </button>
     <div class="container">
-      <button class="btn-exit" type="button">
-        <svg class="icon-exit" width="32" height="32">
-          <use href="/Delivery-App/assets/sprite-CCP9Vw_L.svg#exit"></use>
-        </svg>
-      </button>
-
       <form class="dashboard-modal__form">
         <div class="dashboard-modal__form-field">
           <div class="input">
@@ -222,25 +221,50 @@
       </form>
       <div class="search-client-result is-hidden">
         <div class="data-content"></div>
-        <div class="search-client-result__action-block">
-          <button class="action-btn change-info">Изменить</button>
-          <button class="action-btn map">Карта</button>
-          <button class="action-btn cancel">Удалить</button>
+        <div class="search-client-result-btns action-btn-group">
+          <button class="action-btn change-info">
+            <svg class="icon-exit" width="32" height="32">
+              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#pencil"></use>
+            </svg>
+          </button>
+          <button class="action-btn map">
+            <svg class="icon-exit" width="32" height="32">
+              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#location"></use>
+            </svg>
+          </button>
+          <button class="action-btn cancel">
+            <svg class="icon-exit" width="32" height="32">
+              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#bin"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+      <div class="backdrop clients-list-modal is-hidden">
+  <button class="btn-exit" type="button">
+    <svg class="icon-exit" width="32" height="32">
+      <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+    </svg>
+  </button>
+  <div class="container">
+    <div class="clients-list">
+      <ul class="clients-list__allClients"></ul>
+    </div>
+  </div>
+</div>
+
       <div class="backdrop edit-client-modal is-hidden">
   <div class="edit-client">
-    <div class="container">
-      <button class="btn-exit" type="button">
-        <svg class="icon-exit" width="32" height="32">
-          <use href="/Delivery-App/assets/sprite-CCP9Vw_L.svg#exit"></use>
-        </svg>
-      </button>
+    <button class="btn-exit" type="button">
+      <svg class="icon-exit" width="32" height="32">
+        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+      </svg>
+    </button>
 
+    <div class="container">
       <form class="dashboard-modal__form edit-client-form">
         <input type="hidden" id="edit-id" name="id" />
 
@@ -259,7 +283,6 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-surname"
@@ -275,7 +298,6 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-phone"
@@ -291,22 +313,36 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
-            <label class="input__label visually-hidden" for="edit-location"
+            <label class="input__label visually-hidden" for="country"
+              >Страна</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="country"
+              name="country"
+              value="Украина"
+              placeholder="Страна"
+              required
+            />
+          </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-city"
               >Город/Село</label
             >
             <input
               class="input__control"
               type="text"
-              id="edit-location"
+              id="edit-city"
               name="location"
               placeholder="Город/Село"
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-address"
@@ -321,6 +357,26 @@
             />
           </div>
         </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="coordinates"
+              >Координаты
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              id="coordinates"
+              name="coordinates"
+              placeholder="Координаты"
+            />
+          </div>
+        </div>
+        <button
+          class="dashboard-modal__form-btn add-coordinates-btn"
+          type="button"
+        >
+          Задать текущую позицию
+        </button>
 
         <button class="dashboard-modal__form-btn" type="submit">
           Сохранить
