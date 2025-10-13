@@ -20,40 +20,44 @@
   margin: 12px auto 0;
   border-radius: 2px;
 }
-.nav-buttons {
+.dashboard-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.nav-buttons button {
-  padding: 36px 12px;
-  font-size: 20px;
+.dashboard-list .dashboard-list-item {
   border: none;
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 24px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
-.nav-buttons button:hover {
+.dashboard-button {
+  padding: 36px 12px;
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dashboard-list .dashboard-list-item:hover {
   background-color: var(--color-primary-hover);
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-buttons {
+  .dashboard-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .dashboard-button {
+  .dashboard-list-item {
     flex-basis: calc((100% - 24px) / 2);
   }
-  .dashboard-button:last-child {
+  .dashboard-list-item:last-child {
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .dashboard-button {
+  .dashboard-list-item {
     flex-basis: calc((100% - 48px) / 3);
   }
 }

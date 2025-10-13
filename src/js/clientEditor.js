@@ -13,6 +13,7 @@ export function openEditModal(client, onUpdate) {
   const surnameInput = modal.querySelector('#edit-surname');
   const phoneInput = modal.querySelector('#edit-phone');
   const countryInput = modal.querySelector('#country');
+  const regionInput = modal.querySelector('#edit-region');
   const cityInput = modal.querySelector('#edit-city');
   const addressInput = modal.querySelector('#edit-address');
   const coordinatesInput = modal.querySelector('#coordinates');
@@ -23,6 +24,7 @@ export function openEditModal(client, onUpdate) {
     !surnameInput ||
     !phoneInput ||
     !countryInput ||
+    !regionInput ||
     !cityInput ||
     !addressInput ||
     !coordinatesInput
@@ -35,6 +37,7 @@ export function openEditModal(client, onUpdate) {
   surnameInput.value = '';
   phoneInput.value = '';
   countryInput.value = '';
+  regionInput.value = '';
   cityInput.value = '';
   addressInput.value = '';
   coordinatesInput.value = '';
@@ -45,6 +48,7 @@ export function openEditModal(client, onUpdate) {
   surnameInput.value = client.surname || '';
   phoneInput.value = client.phone || '';
   countryInput.value = client.country || 'Украина';
+  regionInput.value = client.region || 'Винницкая область';
   cityInput.value = client.city || '';
   addressInput.value = client.address || '';
   coordinatesInput.value = client.coordinates || '';
@@ -67,6 +71,7 @@ export function setupEditForm() {
       surname: form.querySelector('#edit-surname')?.value.trim() || '',
       phone: form.querySelector('#edit-phone')?.value.trim() || '',
       country: form.querySelector('#country')?.value.trim() || '',
+      region: form.querySelector('#edit-region')?.value.trim() || '',
       city: form.querySelector('#edit-city')?.value.trim() || '',
       address: form.querySelector('#edit-address')?.value.trim() || '',
       coordinates: form.querySelector('#coordinates')?.value.trim() || '',
