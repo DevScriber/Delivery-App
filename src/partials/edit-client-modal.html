@@ -1,12 +1,12 @@
 <div class="backdrop edit-client-modal is-hidden">
   <div class="edit-client">
-    <div class="container">
-      <button class="btn-exit" type="button">
-        <svg class="icon-exit" width="32" height="32">
-          <use href="/img/sprite.svg#exit"></use>
-        </svg>
-      </button>
+    <button class="btn-exit" type="button">
+      <svg class="icon-exit" width="32" height="32">
+        <use href="/img/sprite.svg#exit"></use>
+      </svg>
+    </button>
 
+    <div class="container">
       <form class="dashboard-modal__form edit-client-form">
         <input type="hidden" id="edit-id" name="id" />
 
@@ -25,7 +25,6 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-surname"
@@ -41,7 +40,6 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-phone"
@@ -57,22 +55,36 @@
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
-            <label class="input__label visually-hidden" for="edit-location"
+            <label class="input__label visually-hidden" for="country"
+              >Страна</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              id="country"
+              name="country"
+              value="Украина"
+              placeholder="Страна"
+              required
+            />
+          </div>
+        </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="edit-city"
               >Город/Село</label
             >
             <input
               class="input__control"
               type="text"
-              id="edit-location"
+              id="edit-city"
               name="location"
               placeholder="Город/Село"
             />
           </div>
         </div>
-
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="edit-address"
@@ -87,6 +99,26 @@
             />
           </div>
         </div>
+        <div class="dashboard-modal__form-field">
+          <div class="input">
+            <label class="input__label visually-hidden" for="coordinates"
+              >Координаты
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              id="coordinates"
+              name="coordinates"
+              placeholder="Координаты"
+            />
+          </div>
+        </div>
+        <button
+          class="dashboard-modal__form-btn add-coordinates-btn"
+          type="button"
+        >
+          Задать текущую позицию
+        </button>
 
         <button class="dashboard-modal__form-btn" type="submit">
           Сохранить

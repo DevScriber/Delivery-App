@@ -1,15 +1,14 @@
 .search-client-result {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 16px;
   border: 1px solid var(--color-border);
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.action-btn {
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  text-decoration: none;
+.add-coordinates-btn {
+  margin-bottom: 24px;
 }

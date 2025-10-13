@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow-y: auto;
 }
 
 .container {
@@ -50,10 +51,58 @@
 
 .btn-exit {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 30px;
+  top: 30px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.btn-exit:hover {
+  background-color: var(--color-border);
 }
 
 .icon-exit {
   fill: var(--color-accent);
+}
+
+.icon-exit:hover {
+  fill: var(--color-accent-hover);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.action-btn-group {
+  display: flex;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.action-btn {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+  height: 64px;
+  width: 64px;
+}
+
+/* .action-btn-group {
+  display: flex;
+  gap: 8px;
+  flex-grow: 0;
+  flex-shrink: 0;
+} */
+.action-btn {
+  transition: ease-in-out 0.3s;
+}
+.action-btn:hover {
+  background-color: var(--color-border);
 }

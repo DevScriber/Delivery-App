@@ -30,10 +30,14 @@ document.querySelector('.nav-buttons').addEventListener('click', event => {
 
 // Закрытие модалок
 
-document.querySelectorAll('.btn-exit ').forEach(btn => {
+document.querySelectorAll('.btn-exit').forEach(btn => {
   btn.addEventListener('click', () => {
     const modal = btn.closest('.backdrop');
+    const resultBlock = document.querySelector('.search-client-result');
+    const dataContent = document.querySelector('.data-content');
     if (modal) {
+      resultBlock.classList.add('is-hidden');
+      dataContent.innerHTML = '';
       modal.classList.add('is-hidden');
     }
   });
