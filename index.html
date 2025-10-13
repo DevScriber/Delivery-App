@@ -12,11 +12,12 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/Delivery-App/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-svkctRIk.css">
+    <link rel="stylesheet" crossorigin href="/Delivery-App/assets/index-BZ9qvsTi.css">
   </head>
   <body>
     <main>
       <!-- Loads the specified .html file -->
+
       <div class="dashboard">
   <div class="container">
       <h2 class="dashboard-title">Панель управления</h2>
@@ -30,15 +31,15 @@
 </div>
 
       <div class="backdrop add-client-modal is-hidden">
-  <div class="add-client">
-    <button class="btn-exit" type="button">
-      <svg class="icon-exit" width="32" height="32">
-        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
-      </svg>
-    </button>
-
-    <div class="container">
-      <form class="dashboard-modal__form add-client__form">
+  <div class="container">
+    <div class="btn-exit-wrapper">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+        </svg>
+      </button>
+    </div>
+    <form class="dashboard-modal__form add-client__form">
         <div class="dashboard-modal__form-field">
           <div class="input">
             <label class="input__label visually-hidden" for="client-name"
@@ -153,103 +154,103 @@
 </div>
 
       <div class="backdrop search-client-modal is-hidden">
-  <div class="search-client">
-    <button class="btn-exit" type="button">
-      <svg class="icon-exit" width="32" height="32">
-        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
-      </svg>
-    </button>
-    <div class="container">
-      <form class="dashboard-modal__form">
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-id"
-              >ID</label
-            >
-            <input
-              class="input__control"
-              type="number"
-              id="id"
-              name="id"
-              placeholder="ID"
-            />
-          </div>
+  <div class="container">
+    <div class="btn-exit-wrapper">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+        </svg>
+      </button>
+    </div>
+    <form class="dashboard-modal__form">
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-id">ID</label>
+          <input
+            class="input__control"
+            type="number"
+            id="id"
+            name="id"
+            placeholder="ID"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-name"
-              >Имя</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Имя"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-name"
+            >Имя</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Имя"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-surname"
-              >Фамилия</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Фамилия"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-surname"
+            >Фамилия</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Фамилия"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-phone"
-              >Телефон</label
-            >
-            <input
-              class="input__control"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Телефон"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-phone"
+            >Телефон</label
+          >
+          <input
+            class="input__control"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
         </div>
-        <button class="dashboard-modal__form-btn" type="submit">Найти</button>
-      </form>
-      <div class="search-client-result is-hidden">
-        <div class="data-content"></div>
-        <div class="search-client-result-btns action-btn-group">
-          <button class="action-btn change-info">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#pencil"></use>
-            </svg>
-          </button>
-          <button class="action-btn map">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#location"></use>
-            </svg>
-          </button>
-          <button class="action-btn cancel">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#bin"></use>
-            </svg>
-          </button>
-        </div>
+      </div>
+      <button class="dashboard-modal__form-btn" type="submit">Найти</button>
+    </form>
+    <div class="search-client-result is-hidden">
+      <div class="data-content"></div>
+      <div class="search-client-result-btns action-btn-group">
+        <button class="action-btn change-info">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#pencil"></use>
+          </svg>
+        </button>
+        <button class="action-btn map">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#location"></use>
+          </svg>
+        </button>
+        <button class="action-btn cancel">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/Delivery-App/assets/sprite-DmnzXT1U.svg#bin"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </div>
 
       <div class="backdrop clients-list-modal is-hidden">
-  <button class="btn-exit" type="button">
-    <svg class="icon-exit" width="32" height="32">
-      <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
-    </svg>
-  </button>
   <div class="container">
+    <div class="btn-exit-wrapper">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+        </svg>
+      </button>
+    </div>
     <div class="clients-list">
       <ul class="clients-list__allClients"></ul>
     </div>
@@ -257,132 +258,129 @@
 </div>
 
       <div class="backdrop edit-client-modal is-hidden">
-  <div class="edit-client">
-    <button class="btn-exit" type="button">
-      <svg class="icon-exit" width="32" height="32">
-        <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
-      </svg>
-    </button>
-
-    <div class="container">
-      <form class="dashboard-modal__form edit-client-form">
-        <input type="hidden" id="edit-id" name="id" />
-
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="edit-name"
-              >Имя</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="edit-name"
-              name="name"
-              placeholder="Имя"
-              required
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="edit-surname"
-              >Фамилия</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="edit-surname"
-              name="surname"
-              placeholder="Фамилия"
-              required
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="edit-phone"
-              >Телефон</label
-            >
-            <input
-              class="input__control"
-              type="tel"
-              id="edit-phone"
-              name="phone"
-              placeholder="Телефон"
-              required
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="country"
-              >Страна</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="country"
-              name="country"
-              value="Украина"
-              placeholder="Страна"
-              required
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="edit-city"
-              >Город/Село</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="edit-city"
-              name="location"
-              placeholder="Город/Село"
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="edit-address"
-              >Адрес</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="edit-address"
-              name="address"
-              placeholder="Адрес"
-            />
-          </div>
-        </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="coordinates"
-              >Координаты
-            </label>
-            <input
-              class="input__control"
-              type="text"
-              id="coordinates"
-              name="coordinates"
-              placeholder="Координаты"
-            />
-          </div>
-        </div>
-        <button
-          class="dashboard-modal__form-btn add-coordinates-btn"
-          type="button"
-        >
-          Задать текущую позицию
-        </button>
-
-        <button class="dashboard-modal__form-btn" type="submit">
-          Сохранить
-        </button>
-      </form>
+  <div class="container">
+    <div class="btn-exit-wrapper">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/Delivery-App/assets/sprite-DmnzXT1U.svg#exit"></use>
+        </svg>
+      </button>
     </div>
+    <form class="dashboard-modal__form edit-client-form">
+      <input type="hidden" id="edit-id" name="id" />
+
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="edit-name"
+            >Имя</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="edit-name"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="edit-surname"
+            >Фамилия</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="edit-surname"
+            name="surname"
+            placeholder="Фамилия"
+            required
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="edit-phone"
+            >Телефон</label
+          >
+          <input
+            class="input__control"
+            type="tel"
+            id="edit-phone"
+            name="phone"
+            placeholder="Телефон"
+            required
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="country"
+            >Страна</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="country"
+            name="country"
+            value="Украина"
+            placeholder="Страна"
+            required
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="edit-city"
+            >Город/Село</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="edit-city"
+            name="location"
+            placeholder="Город/Село"
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="edit-address"
+            >Адрес</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="edit-address"
+            name="address"
+            placeholder="Адрес"
+          />
+        </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="coordinates"
+            >Координаты
+          </label>
+          <input
+            class="input__control"
+            type="text"
+            id="coordinates"
+            name="coordinates"
+            placeholder="Координаты"
+          />
+        </div>
+      </div>
+      <button
+        class="dashboard-modal__form-btn add-coordinates-btn"
+        type="button"
+      >
+        Задать текущую позицию
+      </button>
+
+      <button class="dashboard-modal__form-btn" type="submit">Сохранить</button>
+    </form>
   </div>
 </div>
 
