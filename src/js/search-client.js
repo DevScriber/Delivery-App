@@ -35,6 +35,7 @@ export function setupSearchClient() {
         <p><strong>Фамилия:</strong> ${client.surname}</p>
         <p><strong>Телефон:</strong> ${client.phone}</p>
         <p><strong>Страна:</strong> ${client.country || ''}</p>
+        <p><strong>Область:</strong> ${client.region || ''}</p>
         <p><strong>Город/Село:</strong> ${client.city || ''}</p>
         <p><strong>Адрес:</strong> ${client.address || ''}</p>
         <p><strong>Координаты:</strong> ${client.coordinates || ''}</p>
