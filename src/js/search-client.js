@@ -34,33 +34,42 @@ export function setupSearchClient() {
         <p><strong>Имя:</strong> ${client.name}</p>
         <p><strong>Фамилия:</strong> ${client.surname}</p>
         <p><strong>Телефон:</strong> ${client.phone}</p>
-        <p><strong>Город/Село:</strong> ${client.location || ''}</p>
+        <p><strong>Страна:</strong> ${client.country || ''}</p>
+        <p><strong>Город/Село:</strong> ${client.city || ''}</p>
         <p><strong>Адрес:</strong> ${client.address || ''}</p>
+        <p><strong>Координаты:</strong> ${client.coordinates || ''}</p>
       `;
     };
 
     if (foundClient) {
       renderClient(foundClient);
+      resultBlock.classList.remove('is-hidden');
 
-      const editBtn = modal.querySelector('.change-info');
-      editBtn.onclick = () => {
-        openEditModal(foundClient, updatedClient => {
-          renderClient(updatedClient);
-          Object.assign(foundClient, updatedClient);
-        });
-      };
-      const deleteBtn = modal.querySelector('.cancel');
-      deleteBtn.onclick = () => {
-        if (confirm('Удалить этого клиента?')) {
-          deleteClient(foundClient.id);
-          dataContent.innerHTML = `<p>Клиент удалён</p>`;
-        }
-      };
+      const editBtn = resultBlock.querySelector('.change-info');
+      const deleteBtn = resultBlock.querySelector('.cancel');
+
+      if (editBtn) {
+        editBtn.onclick = () => {
+          openEditModal(foundClient, updatedClient => {
+            Object.assign(foundClient, updatedClient);
+            renderClient(updatedClient);
+          });
+        };
+      }
+
+      if (deleteBtn) {
+        deleteBtn.onclick = () => {
+          if (confirm('Удалить этого клиента?')) {
+            deleteClient(foundClient.id);
+            dataContent.innerHTML = `<p>Клиент удалён</p>`;
+          }
+        };
+      }
     } else {
       dataContent.innerHTML = `<p>Клиент не найден</p>`;
+      resultBlock.classList.remove('is-hidden');
     }
 
-    resultBlock.classList.remove('is-hidden');
     form.reset();
   });
 }
