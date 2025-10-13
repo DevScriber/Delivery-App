@@ -47,6 +47,7 @@ export function setupSearchClient() {
 
       const editBtn = resultBlock.querySelector('.change-info');
       const deleteBtn = resultBlock.querySelector('.cancel');
+      const mapBtn = resultBlock.querySelector('.map');
 
       if (editBtn) {
         editBtn.onclick = () => {
@@ -63,6 +64,25 @@ export function setupSearchClient() {
             deleteClient(foundClient.id);
             dataContent.innerHTML = `<p>Клиент удалён</p>`;
           }
+        };
+      }
+
+      if (mapBtn) {
+        mapBtn.onclick = () => {
+          const coords = foundClient.coordinates?.trim();
+          if (!coords) {
+            alert('У клиента нет координат');
+            return;
+          }
+
+          const [lat, lng] = coords.split(',').map(Number);
+          if (isNaN(lat) || isNaN(lng)) {
+            alert('Неверный формат координат');
+            return;
+          }
+
+          const url = `https://www.google.com/maps?q=${lat},${lng}`;
+          window.open(url, '_blank');
         };
       }
     } else {

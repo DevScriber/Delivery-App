@@ -65,9 +65,24 @@ function renderClientsList(listContainer, referenceActions) {
       });
     };
 
-    mapBtn.onclick = () => {
-      alert('Функция карты пока не реализована');
-    };
+    if (mapBtn) {
+      mapBtn.onclick = () => {
+        const coords = client.coordinates?.trim();
+        if (!coords) {
+          alert('У клиента нет координат');
+          return;
+        }
+
+        const [lat, lng] = coords.split(',').map(Number);
+        if (isNaN(lat) || isNaN(lng)) {
+          alert('Неверный формат координат');
+          return;
+        }
+
+        const url = `https://www.google.com/maps?q=${lat},${lng}`;
+        window.open(url, '_blank');
+      };
+    }
 
     deleteBtn.onclick = () => {
       if (confirm('Удалить клиента?')) {
