@@ -1,89 +1,87 @@
 <div class="backdrop search-client-modal is-hidden">
-  <div class="search-client">
-    <button class="btn-exit" type="button">
-      <svg class="icon-exit" width="32" height="32">
-        <use href="/img/sprite.svg#exit"></use>
-      </svg>
-    </button>
-    <div class="container">
-      <form class="dashboard-modal__form">
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-id"
-              >ID</label
-            >
-            <input
-              class="input__control"
-              type="number"
-              id="id"
-              name="id"
-              placeholder="ID"
-            />
-          </div>
+  <div class="container">
+    <div class="btn-exit-wrapper">
+      <button class="btn-exit" type="button">
+        <svg class="icon-exit" width="32" height="32">
+          <use href="/img/sprite.svg#exit"></use>
+        </svg>
+      </button>
+    </div>
+    <form class="dashboard-modal__form">
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-id">ID</label>
+          <input
+            class="input__control"
+            type="number"
+            id="id"
+            name="id"
+            placeholder="ID"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-name"
-              >Имя</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Имя"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-name"
+            >Имя</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Имя"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-surname"
-              >Фамилия</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Фамилия"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-surname"
+            >Фамилия</label
+          >
+          <input
+            class="input__control"
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Фамилия"
+          />
         </div>
-        <div class="dashboard-modal__form-field">
-          <div class="input">
-            <label class="input__label visually-hidden" for="client-phone"
-              >Телефон</label
-            >
-            <input
-              class="input__control"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Телефон"
-            />
-          </div>
+      </div>
+      <div class="dashboard-modal__form-field">
+        <div class="input">
+          <label class="input__label visually-hidden" for="client-phone"
+            >Телефон</label
+          >
+          <input
+            class="input__control"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
         </div>
-        <button class="dashboard-modal__form-btn" type="submit">Найти</button>
-      </form>
-      <div class="search-client-result is-hidden">
-        <div class="data-content"></div>
-        <div class="search-client-result-btns action-btn-group">
-          <button class="action-btn change-info">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/img/sprite.svg#pencil"></use>
-            </svg>
-          </button>
-          <button class="action-btn map">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/img/sprite.svg#location"></use>
-            </svg>
-          </button>
-          <button class="action-btn cancel">
-            <svg class="icon-exit" width="32" height="32">
-              <use xlink:href="/img/sprite.svg#bin"></use>
-            </svg>
-          </button>
-        </div>
+      </div>
+      <button class="dashboard-modal__form-btn" type="submit">Найти</button>
+    </form>
+    <div class="search-client-result is-hidden">
+      <div class="data-content"></div>
+      <div class="search-client-result-btns action-btn-group">
+        <button class="action-btn change-info">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/img/sprite.svg#pencil"></use>
+          </svg>
+        </button>
+        <button class="action-btn map">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/img/sprite.svg#location"></use>
+          </svg>
+        </button>
+        <button class="action-btn cancel">
+          <svg class="icon-exit" width="32" height="32">
+            <use xlink:href="/img/sprite.svg#bin"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>

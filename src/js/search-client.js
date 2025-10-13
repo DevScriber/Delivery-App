@@ -23,8 +23,8 @@ export function setupSearchClient() {
     const foundClient = storedClients.find(
       client =>
         (!id || String(client.id) === id) &&
-        (!name || client.name.toLowerCase() === name) &&
-        (!surname || client.surname.toLowerCase() === surname) &&
+        (!name || client.name.toLowerCase().trim() === name) &&
+        (!surname || client.surname.toLowerCase().trim() === surname) &&
         (!phone || client.phone === phone)
     );
 
