@@ -1,5 +1,5 @@
 // Логика добавления нового клиента и сохранения его данных в localStorage
-
+import { setupCoordinatesButton } from './clientEditor.js';
 import { getClients, saveClients } from './clientStorage.js';
 
 export function setupAddClient() {
@@ -25,3 +25,9 @@ export function setupAddClient() {
     addClientForm.reset();
   });
 }
+
+setupCoordinatesButton(
+  '.edit-client-modal',
+  '#coordinates',
+  '.add-coordinates-btn'
+);

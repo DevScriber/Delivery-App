@@ -88,19 +88,22 @@ export function setupEditForm() {
   });
 }
 
-const addBtn = document.querySelector('.add-coordinates-btn');
-if (addBtn) {
+export function setupCoordinatesButton(
+  modalSelector,
+  inputSelector,
+  buttonSelector
+) {
+  const modal = document.querySelector(modalSelector);
+  const addBtn = modal?.querySelector(buttonSelector);
+  const coordsInput = modal?.querySelector(inputSelector);
+
+  if (!modal || !addBtn || !coordsInput) return;
+
   addBtn.onclick = () => {
     navigator.geolocation.getCurrentPosition(
       pos => {
-        const modal = document.querySelector('.edit-client-modal');
-        const coordsInput = modal?.querySelector('#coordinates');
-        if (coordsInput) {
-          coordsInput.value = `${pos.coords.latitude}, ${pos.coords.longitude}`;
-          console.log('Координаты установлены:', coordsInput.value);
-        } else {
-          console.warn('Поле #coordinates не найдено');
-        }
+        coordsInput.value = `${pos.coords.latitude}, ${pos.coords.longitude}`;
+        console.log('Координаты установлены:', coordsInput.value);
       },
       err => {
         console.error('Ошибка геолокации:', err);
@@ -108,3 +111,9 @@ if (addBtn) {
     );
   };
 }
+
+setupCoordinatesButton(
+  '.add-client-modal',
+  '#coordinates',
+  '.add-coordinates-btn'
+);
